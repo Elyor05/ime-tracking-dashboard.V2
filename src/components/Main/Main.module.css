@@ -1,0 +1,102 @@
+#daily {
+    color: var(--Pale-Blue);
+}
+
+#weekly {
+    color: white;
+}
+
+#monthly {
+    color: var(--Pale-Blue);
+}
+
+#main {
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    min-width: 180px;
+    width: 12.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Blue);
+    border-radius: 15px;
+    height: 55%;
+    padding: 20px;
+}
+
+#name img {
+    width: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#name span {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--Pale-Blue);
+}
+
+h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+#period {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+#period button {
+    text-align: start;
+    color: var(--Pale-Blue);
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+#period button:is(:hover,:focus) {
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 769px) {
+    #main {
+        width: 380px;
+    }
+
+    #name {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #name span {
+        margin: 0;
+        width: 100%;
+    }
+
+    #period {
+        flex-direction: row;
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    #main {
+        width: 80vw;
+    }
+}
