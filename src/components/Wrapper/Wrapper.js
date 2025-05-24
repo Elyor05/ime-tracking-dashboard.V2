@@ -4,7 +4,7 @@ import DataList from "../DataList/DataList";
 import {DataContext} from "../Context/DataContext";
 
 const Wrapper = () => {
-    const [data,setData] = React.useState('daily');
+    const [data, setData] = React.useState('daily');
 
     const updateData = (newData) => {
         setData(newData);
@@ -14,10 +14,10 @@ const Wrapper = () => {
     // let data = 'daily';
     // let setData = (newData) => data = newData;
     return (<>
-        <DataContext.Provider value={{data, updateData}}>
-            <Main/>
-            <DataList/>
-        </DataContext.Provider>
+            <DataContext.Provider value={{data, updateData}}>
+                <Main/>
+                <DataList/>
+            </DataContext.Provider>
         </>
     );
 };
